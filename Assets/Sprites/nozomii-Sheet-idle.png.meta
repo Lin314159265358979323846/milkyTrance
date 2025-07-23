@@ -1,0 +1,910 @@
+fileFormatVersion: 2
+guid: 3075a16cc591a4756b3aee054568d7c8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8322413794817915884
+    second: nozomii-Sheet-idle_0
+  - first:
+      213: 122771276506500366
+    second: nozomii-Sheet-idle_1
+  - first:
+      213: 6456002082543230239
+    second: nozomii-Sheet-idle_2
+  - first:
+      213: -2401066191791887284
+    second: nozomii-Sheet-idle_3
+  - first:
+      213: -2609613413078021007
+    second: nozomii-Sheet-idle_4
+  - first:
+      213: 8632145278169154686
+    second: nozomii-Sheet-idle_5
+  - first:
+      213: -1087607941275499890
+    second: nozomii-Sheet-idle_6
+  - first:
+      213: 3099996978327988061
+    second: nozomii-Sheet-idle_7
+  - first:
+      213: 8428335670191006872
+    second: nozomii-Sheet-idle_8
+  - first:
+      213: -450483353307473030
+    second: nozomii-Sheet-idle_9
+  - first:
+      213: -1787238281295876400
+    second: nozomii-Sheet-idle_10
+  - first:
+      213: -3069660967119907088
+    second: nozomii-Sheet-idle_11
+  - first:
+      213: 3598927173233327083
+    second: nozomii-Sheet-idle_12
+  - first:
+      213: 2853853835007071254
+    second: nozomii-Sheet-idle_13
+  - first:
+      213: 5390595923228607489
+    second: nozomii-Sheet-idle_14
+  - first:
+      213: -2298209058253561208
+    second: nozomii-Sheet-idle_15
+  - first:
+      213: -1841163522563202842
+    second: nozomii-Sheet-idle_16
+  - first:
+      213: 657158165517412620
+    second: nozomii-Sheet-idle_17
+  - first:
+      213: -300649139239172092
+    second: nozomii-Sheet-idle_18
+  - first:
+      213: 213186055525690784
+    second: nozomii-Sheet-idle_19
+  - first:
+      213: -6578845392596019681
+    second: nozomii-Sheet-idle_20
+  - first:
+      213: -5396928647104527463
+    second: nozomii-Sheet-idle_21
+  - first:
+      213: -3676364785903916755
+    second: nozomii-Sheet-idle_22
+  - first:
+      213: 1502640984699180174
+    second: nozomii-Sheet-idle_23
+  - first:
+      213: 6746780072972723512
+    second: nozomii-Sheet-idle_24
+  - first:
+      213: -5316756829714169404
+    second: nozomii-Sheet-idle_25
+  - first:
+      213: 3800100931296488691
+    second: nozomii-Sheet-idle_26
+  - first:
+      213: 5504503162765214939
+    second: nozomii-Sheet-idle_27
+  - first:
+      213: -9001781516657381719
+    second: nozomii-Sheet-idle_28
+  - first:
+      213: 4812054113346504372
+    second: nozomii-Sheet-idle_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: nozomii-Sheet-idle_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 0
+        width: 44
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41441166fb8d08c80800000000000000
+      internalID: -8322413794817915884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nozomii-Sheet-idle_1
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 0
+        width: 44
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0d8ac453db24b100800000000000000
+      internalID: 122771276506500366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nozomii-Sheet-idle_2
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 0
+        width: 44
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1ddb2f40b3589950800000000000000
+      internalID: 6456002082543230239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nozomii-Sheet-idle_3
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 0
+        width: 44
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4c6b0c1503bdaed0800000000000000
+      internalID: -2401066191791887284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nozomii-Sheet-idle_4
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 0
+        width: 44
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17cc3685d6ac8cbd0800000000000000
+      internalID: -2609613413078021007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nozomii-Sheet-idle_5
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 0
+        width: 44
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7486da356a8bc770800000000000000
+      internalID: 8632145278169154686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nozomii-Sheet-idle_6
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 0
+        width: 44
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e82416df65a08e0f0800000000000000
+      internalID: -1087607941275499890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nozomii-Sheet-idle_7
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 0
+        width: 44
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d57260ac3d6650b20800000000000000
+      internalID: 3099996978327988061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nozomii-Sheet-idle_8
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 0
+        width: 44
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8942d7503a677f470800000000000000
+      internalID: 8428335670191006872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nozomii-Sheet-idle_9
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 0
+        width: 44
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7b91e4e6cf8fb9f0800000000000000
+      internalID: -450483353307473030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nozomii-Sheet-idle_10
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 0
+        width: 44
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0de216a90447237e0800000000000000
+      internalID: -1787238281295876400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nozomii-Sheet-idle_11
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 0
+        width: 44
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f69fe93d9f5665d0800000000000000
+      internalID: -3069660967119907088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nozomii-Sheet-idle_12
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 0
+        width: 44
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bebb2153235f1f130800000000000000
+      internalID: 3598927173233327083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nozomii-Sheet-idle_13
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 0
+        width: 44
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6149b7c41fcea9720800000000000000
+      internalID: 2853853835007071254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nozomii-Sheet-idle_14
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 0
+        width: 44
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 104c5bb7e6e3fca40800000000000000
+      internalID: 5390595923228607489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nozomii-Sheet-idle_15
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 0
+        width: 44
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8822637b90f1b10e0800000000000000
+      internalID: -2298209058253561208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nozomii-Sheet-idle_16
+      rect:
+        serializedVersion: 2
+        x: 1031
+        y: 0
+        width: 44
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e0a638f78fd276e0800000000000000
+      internalID: -1841163522563202842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nozomii-Sheet-idle_17
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 0
+        width: 44
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c09a9e8aed1be1900800000000000000
+      internalID: 657158165517412620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nozomii-Sheet-idle_18
+      rect:
+        serializedVersion: 2
+        x: 1159
+        y: 0
+        width: 44
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4084f956331e3dbf0800000000000000
+      internalID: -300649139239172092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nozomii-Sheet-idle_19
+      rect:
+        serializedVersion: 2
+        x: 1223
+        y: 0
+        width: 44
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0adeca6869365f200800000000000000
+      internalID: 213186055525690784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nozomii-Sheet-idle_20
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 0
+        width: 44
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f16591eb8fe33b4a0800000000000000
+      internalID: -6578845392596019681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nozomii-Sheet-idle_21
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 0
+        width: 44
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99384375df14a15b0800000000000000
+      internalID: -5396928647104527463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nozomii-Sheet-idle_22
+      rect:
+        serializedVersion: 2
+        x: 1415
+        y: 0
+        width: 44
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d29217794bdeafcc0800000000000000
+      internalID: -3676364785903916755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nozomii-Sheet-idle_23
+      rect:
+        serializedVersion: 2
+        x: 1479
+        y: 0
+        width: 44
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8410f5a3047ad410800000000000000
+      internalID: 1502640984699180174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nozomii-Sheet-idle_24
+      rect:
+        serializedVersion: 2
+        x: 1543
+        y: 0
+        width: 44
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 835293bfab061ad50800000000000000
+      internalID: 6746780072972723512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nozomii-Sheet-idle_25
+      rect:
+        serializedVersion: 2
+        x: 1607
+        y: 0
+        width: 44
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c141cf25d51736b0800000000000000
+      internalID: -5316756829714169404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nozomii-Sheet-idle_26
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 0
+        width: 44
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fcee88c9abacb430800000000000000
+      internalID: 3800100931296488691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nozomii-Sheet-idle_27
+      rect:
+        serializedVersion: 2
+        x: 1735
+        y: 0
+        width: 44
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd482a1667ce36c40800000000000000
+      internalID: 5504503162765214939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nozomii-Sheet-idle_28
+      rect:
+        serializedVersion: 2
+        x: 1799
+        y: 0
+        width: 44
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9aea5f1776f331380800000000000000
+      internalID: -9001781516657381719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nozomii-Sheet-idle_29
+      rect:
+        serializedVersion: 2
+        x: 1863
+        y: 0
+        width: 44
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b6c9f188b9d7c240800000000000000
+      internalID: 4812054113346504372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      nozomii-Sheet-idle_0: -8322413794817915884
+      nozomii-Sheet-idle_1: 122771276506500366
+      nozomii-Sheet-idle_10: -1787238281295876400
+      nozomii-Sheet-idle_11: -3069660967119907088
+      nozomii-Sheet-idle_12: 3598927173233327083
+      nozomii-Sheet-idle_13: 2853853835007071254
+      nozomii-Sheet-idle_14: 5390595923228607489
+      nozomii-Sheet-idle_15: -2298209058253561208
+      nozomii-Sheet-idle_16: -1841163522563202842
+      nozomii-Sheet-idle_17: 657158165517412620
+      nozomii-Sheet-idle_18: -300649139239172092
+      nozomii-Sheet-idle_19: 213186055525690784
+      nozomii-Sheet-idle_2: 6456002082543230239
+      nozomii-Sheet-idle_20: -6578845392596019681
+      nozomii-Sheet-idle_21: -5396928647104527463
+      nozomii-Sheet-idle_22: -3676364785903916755
+      nozomii-Sheet-idle_23: 1502640984699180174
+      nozomii-Sheet-idle_24: 6746780072972723512
+      nozomii-Sheet-idle_25: -5316756829714169404
+      nozomii-Sheet-idle_26: 3800100931296488691
+      nozomii-Sheet-idle_27: 5504503162765214939
+      nozomii-Sheet-idle_28: -9001781516657381719
+      nozomii-Sheet-idle_29: 4812054113346504372
+      nozomii-Sheet-idle_3: -2401066191791887284
+      nozomii-Sheet-idle_4: -2609613413078021007
+      nozomii-Sheet-idle_5: 8632145278169154686
+      nozomii-Sheet-idle_6: -1087607941275499890
+      nozomii-Sheet-idle_7: 3099996978327988061
+      nozomii-Sheet-idle_8: 8428335670191006872
+      nozomii-Sheet-idle_9: -450483353307473030
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
