@@ -1,56 +1,59 @@
 using UnityEngine;
-using UnityEngine.InputSystem; // Important to include this!
+using UnityEngine.InputSystem;
 
-// This script will handle all player movement and input.
-// We'll build on this script for the entire game.
 public class PlayerController : MonoBehaviour
 {
-    // --- Player Movement ---
-    [Header("Movement Settings")]
-    [Tooltip("The speed at which the player moves left and right.")]
-    public float moveSpeed = 7f;
-
-    [Header("Jumping Settings")]
-    [Tooltip("The force applied when the player jumps.")]
-    public float jumpForce = 16f;
-
-    [Header("Better Jumping Settings")]
-    [Tooltip("The gravity scale applied when falling.")]
-    public float fallGravityMultiplier = 2.5f;
-    [Tooltip("The gravity scale applied when the jump button is released early.")]
-    public float lowJumpGravityMultiplier = 2f;
-    private float defaultGravityScale;
+    [Header("Movement")]
+    [Tooltip("The force applied to the player on the ground to make them accelerate.")]
+    public float groundAcceleration = 120f;
+    [Tooltip("The force applied to the player in the air to change direction.")]
+    public float airAcceleration = 90f;
+    [Tooltip("The maximum horizontal speed the player can reach.")]
+    public float maxSpeed = 12f;
+    [Tooltip("The drag applied on the ground when there is no horizontal input.")]
+    public float groundLinearDrag = 8f;
+    [Tooltip("The drag applied in the air when there is no horizontal input.")]
+    public float airLinearDrag = 2f;
 
 
-    // --- Ground Check ---
-    [Header("Ground Check Settings")]
-    [Tooltip("The transform representing the point where we check for ground.")]
+    [Header("Jumping")]
+    [Tooltip("The desired peak height of the jump.")]
+    public float jumpHeight = 5f;
+    [Tooltip("The gravity multiplier applied during the upward arc of the jump.")]
+    public float jumpGravityMultiplier = 1f;
+    [Tooltip("The gravity multiplier applied when falling to make the jump feel less floaty.")]
+    public float fallGravityMultiplier = 3.5f;
+    [Tooltip("The gravity multiplier applied when the jump button is released early, allowing for variable jump height.")]
+    public float lowJumpGravityMultiplier = 2.5f;
+    [Tooltip("How long (in seconds) the player can still jump after walking off a ledge.")]
+    public float coyoteTime = 0.15f;
+    [Tooltip("How long (in seconds) a jump input is 'remembered' before the player lands.")]
+    public float jumpBufferTime = 0.1f;
+
+    [Header("Ground Check")]
     public Transform groundCheck;
-    [Tooltip("The radius of the circle used to check for ground.")]
     public float groundCheckRadius = 0.2f;
-    [Tooltip("A LayerMask indicating what layers are considered ground.")]
     public LayerMask whatIsGround;
-    private bool isGrounded; // Is the player currently touching the ground?
 
-
-    // --- Component References ---
-    private Rigidbody2D rb; // A reference to the player's Rigidbody2D component.
-    private PlayerInput playerInput; // A reference to the PlayerInput component.
-    private Vector2 moveInput; // A variable to store the input from the new system.
+    // --- Private State ---
+    private Rigidbody2D rb;
+    private PlayerInput playerInput;
+    private Vector2 moveInput;
+    private bool isGrounded;
+    private float coyoteTimeCounter;
+    private float jumpBufferCounter;
+    private float defaultGravityScale;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         playerInput = GetComponent<PlayerInput>();
-        defaultGravityScale = rb.gravityScale; // Store the default gravity scale
-
-        if (rb == null) Debug.LogError("PlayerController is missing a Rigidbody2D component!");
-        if (playerInput == null) Debug.LogError("PlayerController is missing a PlayerInput component!");
+        defaultGravityScale = rb.gravityScale;
     }
 
     private void OnEnable()
     {
-        if (playerInput != null && playerInput.actions != null)
+        if (playerInput?.actions != null)
         {
             playerInput.actions["Move"].performed += OnMove;
             playerInput.actions["Move"].canceled += OnMove;
@@ -60,7 +63,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnDisable()
     {
-        if (playerInput != null && playerInput.actions != null)
+        if (playerInput?.actions != null)
         {
             playerInput.actions["Move"].performed -= OnMove;
             playerInput.actions["Move"].canceled -= OnMove;
@@ -68,27 +71,67 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    void Update()
+    {
+        // --- Timer Management ---
+        if (coyoteTimeCounter > 0) coyoteTimeCounter -= Time.deltaTime;
+        if (jumpBufferCounter > 0) jumpBufferCounter -= Time.deltaTime;
+
+        // --- Ground Check & Coyote Time ---
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);
+        if (isGrounded)
+        {
+            coyoteTimeCounter = coyoteTime;
+        }
+    }
+
     void FixedUpdate()
     {
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);
+        // --- Horizontal Movement ---
+        float currentAcceleration = isGrounded ? groundAcceleration : airAcceleration;
+        rb.AddForce(new Vector2(moveInput.x * currentAcceleration, 0f));
 
-        // Apply horizontal movement.
-        rb.linearVelocity = new Vector2(moveInput.x * moveSpeed, rb.linearVelocity.y);
+        if (Mathf.Abs(rb.linearVelocity.x) > maxSpeed)
+        {
+            rb.linearVelocity = new Vector2(Mathf.Sign(rb.linearVelocity.x) * maxSpeed, rb.linearVelocity.y);
+        }
+
+        // --- Deceleration / Linear Drag ---
+        if (Mathf.Abs(moveInput.x) < 0.01f)
+        {
+            float currentDrag = isGrounded ? groundLinearDrag : airLinearDrag;
+            float amount = Mathf.Min(Mathf.Abs(rb.linearVelocity.x), currentDrag);
+            amount *= Mathf.Sign(rb.linearVelocity.x);
+            rb.AddForce(Vector2.right * -amount, ForceMode2D.Impulse);
+        }
+
+        // --- Jump Execution ---
+        // The check is now performed here, every physics frame.
+        if (jumpBufferCounter > 0f && coyoteTimeCounter > 0f)
+        {
+            float jumpVelocity = Mathf.Sqrt(jumpHeight * -2f * (Physics2D.gravity.y * defaultGravityScale));
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpVelocity);
+
+            // Reset timers to prevent multiple jumps
+            jumpBufferCounter = 0f;
+            coyoteTimeCounter = 0f;
+        }
 
         // --- Better Jumping Physics ---
         if (rb.linearVelocity.y < 0)
         {
-            // We are falling, so apply the fall multiplier.
             rb.gravityScale = defaultGravityScale * fallGravityMultiplier;
         }
         else if (rb.linearVelocity.y > 0 && !playerInput.actions["Jump"].IsPressed())
         {
-            // We are moving up but the player has released the jump button, so apply the low jump multiplier.
             rb.gravityScale = defaultGravityScale * lowJumpGravityMultiplier;
+        }
+        else if (rb.linearVelocity.y > 0)
+        {
+            rb.gravityScale = defaultGravityScale * jumpGravityMultiplier;
         }
         else
         {
-            // Not falling or actively jumping, so use the default gravity.
             rb.gravityScale = defaultGravityScale;
         }
     }
@@ -100,11 +143,8 @@ public class PlayerController : MonoBehaviour
 
     private void OnJump(InputAction.CallbackContext context)
     {
-        if (isGrounded)
-        {
-            // Apply an instant upward force.
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-        }
+        // This function's only job now is to start the buffer timer.
+        jumpBufferCounter = jumpBufferTime;
     }
 
     private void OnDrawGizmosSelected()
